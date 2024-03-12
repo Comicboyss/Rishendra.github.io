@@ -10,6 +10,370 @@
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Della+Respira&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Questrial&family=Sulphur+Point:wght@300;400;700&display=swap" 
     rel="stylesheet">
     <style>
+      body {
+  background-color: white;
+}
+.show {
+  font-size: 26px;
+  font-family: Arial black;
+  color: rgb(11, 3, 95);
+  margin-top: 1px;
+  display: flexbox;
+  font-family: "Sulphur Point", sans-serif;
+  padding-left: 20px;
+}
+.lets {
+  border: 2px solid black;
+  border-radius: 40px;
+  width: 85px;
+  height: 32px;
+  display: flexbox;
+  background-color: white;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: -48px;
+}
+.lets:hover {
+  background-color: wheat;
+}
+.design {
+  font-family: "Questrial", sans-serif;
+  margin-top: 4px;
+  padding-left: 20px;
+  display: flexbox;
+  font-size: 53px;
+  -webkit-animation: text-blur-out 1.2s linear reverse both;
+  animation: text-blur-out 1.2s linear reverse both;
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+.he {
+  margin-top: 48px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.me {
+  float: right;
+  width: 220px;
+  padding-right: 0px;
+  margin-left: 20px;
+  border-radius: 100px;
+  margin-top: -280px;
+  display: flexbox;
+  margin-right: 20px;
+  border-end-start-radius: 0px;
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.media {
+  background-color: black;
+  border: none;
+  width: 101%;
+  margin-left: -5px;
+  height: 300px;
+  margin-top: 0px;
+}
+.foll {
+  font-family: "Anta", sans-serif;
+  float: right;
+  margin-top: -200px;
+  color: rgb(218, 255, 145);
+  text-align: right;
+  padding-right: 200px;
+  font-size: 60px;
+}
+.service {
+  text-align: center;
+  color: #333d79ff;
+  font-family: "Chakra Petch", sans-serif;
+}
+.he {
+  margin-top: 80px;
+  color: rgb(214, 86, 0);
+}
+.fig {
+  height: 80px;
+  margin-left: 4%;
+  display: flexbox;
+}
+.f {
+  font-family: "Sulphur Point", sans-serif;
+  color: gray;
+  float: right;
+  font-size: 50px;
+  margin-top: 40px;
+  padding-right: 2px;
+}
+.photo {
+  margin-top: 20px;
+  height: 80px;
+  margin-left: 4%;
+  display: flexbox;
+}
+.s {
+  font-family: "Borel", cursive;
+  float: right;
+  font-size: 50px;
+  margin-top: 40px;
+  padding-right: 2px;
+  color: rgb(0, 71, 20);
+}
+.web {
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 4.5%;
+  display: flexbox;
+}
+.w {
+  font-family: "Chakra Petch", sans-serif;
+  color: rgba(255, 10, 10, 0.444)5)236, 0, 0);
+  float: right;
+  font-size: 50px;
+  margin-top: 40px;
+  padding-right: 2px;
+}
+.skill {
+  display: flexbox;
+  color: rgb(0, 0, 0);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 30px;
+  background-color: #fff183;
+  margin-top: 60px;
+  width: 101%;
+  height: 400px;
+  margin-left: -7px;
+}
+#myBtn {
+  display: flexbox;
+  position: fixed;
+  bottom: 20px;
+  height: 50px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: rgb(190, 225, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(190, 225, 235, 1) 0%,
+    rgba(169, 207, 111, 1) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border-radius: 80px;
+}
+.up {
+  height: 20px;
+}
+.sk {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 60px;
+  color: brown;
+}
+.cards {
+  font-family: "Sulphur Point", sans-serif;
+  margin-left: 700px;
+  margin-top: -100px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.cards .red {
+  background-color: #ff9f9f;
+  color: black;
+}
+
+.cards .blue {
+  background-color: #8a9cff;
+  color: black;
+}
+
+.cards .green {
+  background-color: #bc75ff;
+  color: black;
+}
+
+.cards .card {
+  float: right;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(6px);
+  transform: scale(0.9, 0.9);
+}
+.logi {
+  height: 80px;
+}
+/* responsive */
+@media (max-width: 900px) {
+  .bb {
+    margin-top: 20px;
+  }
+  .he {
+    margin-top: 80px;
+  }
+  .s {
+    margin-top: -46px;
+  }
+  .w {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 40px;
+    margin-top: -50px;
+    padding-right: 2px;
+    display: flexbox;
+  }
+  .skill {
+    display: flexbox;
+    color: rgb(0, 0, 0);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    background-color: #ffe387;
+    margin-top: 40px;
+    width: 104.66%;
+    height: 400px;
+    margin-left: -7px;
+  }
+  .sk {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 40px;
+    color: brown;
+  }
+  .cards {
+    margin-left: 90px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .cards .red {
+    background-color: #f35e77;
+  }
+
+  .cards .blue {
+    background-color: #3b82f6;
+  }
+
+  .cards .green {
+    background-color: #22c55e;
+  }
+}
+
       @media (max-width: 600px) {
         body {
           display: flexbox;
